@@ -15,7 +15,7 @@ public class Main {
         BankAccount client = new BankAccount();
         client.setAccountNumber("2398999");
         client.setPhoneNumber(" (541)-298-3499" );
-        client.setCustomerName("Babatunde Idahor");
+        client.setCustomerName("Max");
         client.setEmail("tundahor@yahoo.com");
         client.printCustomerDetails();
         client.setDepositFund(20.50);
