@@ -16,7 +16,7 @@ public class Main {
         client.setAccountNumber("2398999");
         client.setPhoneNumber(" (541)-298-3499" );
         client.setCustomerName("Max");
-        client.setEmail("tundahor@yahoo.com");
+        client.setEmail("maxT@yahoo.com");
         client.printCustomerDetails();
         client.setDepositFund(20.50);
         client.setWithdrawFund(50);
