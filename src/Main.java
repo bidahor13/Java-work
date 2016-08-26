@@ -15,8 +15,13 @@ public class Main {
         BankAccount client = new BankAccount();
         client.setAccountNumber("2398999");
         client.setPhoneNumber(" (541)-298-3499" );
+<<<<<<< HEAD
         client.setCustomerName("Sam Sammy");
         client.setEmail("rupert@gmail.com");
+=======
+        client.setCustomerName("Max");
+        client.setEmail("maxT@yahoo.com");
+>>>>>>> 44a97f76844ee25be5958e796d0dd109ff0e051d
         client.printCustomerDetails();
         client.setDepositFund(20.50);
         client.setWithdrawFund(20);
