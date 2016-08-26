@@ -7,11 +7,10 @@ public class BankAccount {
     private String customerName;
     private String email;               // customerEmailAddress
     private String phoneNumber;         //customerPhoneNumber
-    private double  amountBalance;         // double balance
+    private double  amountBalance;      // double balance
 
     //-- to generate setter and getters using IDE
-    // --- select code from the tab -> Generate -> selct on the options - > select the fields you want.
-
+    // --- select code from the tab -> Generate -> select on the options - > select the fields you want.
 
 //Constructor
     public BankAccount(String acctNum, String customerName, String emailAddress, String phoneNumber , float amountBalance)
@@ -32,12 +31,12 @@ public class BankAccount {
         this.amountBalance = 0;
     }
 
-
+    //Getter for account balance
     public double getAmountBalance(){
         return amountBalance;
     }
 
-    // Getter for account account number
+    // Getter for account number
     public String getAccountNumber(){
         return accountNumber;
     }
@@ -78,34 +77,19 @@ public class BankAccount {
 
 //This method allow the customer to deposit funds(this should increment the balance value)
     public void setDepositFund(double depositFund){
-//        if (depositFund > amountBalance ) {
                 this.amountBalance += depositFund;
-                System.out.println("You account balance after Transaction: $" + amountBalance);
-        //return;
+                System.out.println("Your account balance after Transaction: $" + amountBalance);
+
             }
-       // }
 
     // This method would allow the customer to withdraw funds .
     public void setWithdrawFund(double withdrawFund){
-//        if (withdrawFund <= amountBalance ) {
-//                amountBalance -= withdrawFund;
-//        }else{
-//            System.out.println("You don't have enough funds");
-//            return; // terminates here if the there is not enough funds in the users account
-//        }
-
         if(this.amountBalance - withdrawFund < 0) {
-            System.out.println("You don't have enought funds!! => Only " + this.amountBalance + " is available for withdrawal." + "\n" + "Your new balance is $"+ this.amountBalance);
+            System.out.println("You don't have enough funds!! => Only " + this.amountBalance + " is available for withdrawal." + "\n" + "Your new balance is $"+ this.amountBalance);
         }else{
             this.amountBalance -= withdrawFund;
-            System.out.println("You did a withdrwal of $" + withdrawFund +  " processed. Remaining balance is: " +  this.amountBalance);
+            System.out.println("You did a withdrawal of $" + withdrawFund +  " processed. Remaining balance is: $" +  this.amountBalance);
         }
-
-        // Statement below displays the out come of a successful transaction.
-        //System.out.println("Amount removed from account : $" + withdrawFund);
-//        System.out.println("*--------------------------------------------------------------------*");
-//        System.out.println("You withdrew: $" + withdrawFund ) ;
-//        System.out.println("Transaction complete! Total Balance in your account : $" + Math.round(amountBalance) );
 
     }
     //Method prints out details of the customer
