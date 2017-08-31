@@ -6,6 +6,7 @@ package com.Babatunde;
 public class VipCustomer {
 
     private String name;
+    private int zipCode;	
     private double creditLine;
     private String emailAddress;
 
@@ -28,10 +29,11 @@ public class VipCustomer {
     }
 
     //non- default constructor - 3rd constructor
-    public VipCustomer(String name, double creditLine, String emailAddress){
+    public VipCustomer(String name, double creditLine, String emailAddress, zipCode){
         this.name =name;
         this.creditLine = creditLine;
         this.emailAddress = emailAddress;
+        this.zipCode = zipCode;
     }
 
     /* Returns the name of the Vip customer */
@@ -47,6 +49,11 @@ public class VipCustomer {
     public String getEmailAddress() {
         return emailAddress;
     }
+
+     public int getZipCode(){
+        return zipCode;   	
+}
+
 
 
 }
