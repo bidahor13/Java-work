@@ -1,7 +1,7 @@
 package com.Babatunde;
 
 /**
- * Created by Babatunde on 8/25/2016.
+ * Created by Tunde on 8/25/2016.
  */
 public class VipCustomer {
 
